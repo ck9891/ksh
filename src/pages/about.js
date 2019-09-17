@@ -12,7 +12,7 @@ function AboutPage() {
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
       <section className="flex flex-col items-center text-center mb-6">
-        <h1 className="bg-blue-200 text-3xl font-bold my-8 p-3 ">About</h1>
+        <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">About</h1>
       </section>
       <section className="flex flex-col md:flex-row items-center">
         <h2 className="bg-blue-400 text-2xl font-bold inline-block my-8 p-3">
