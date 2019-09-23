@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import dogIllustration from "../images/dog-illustration.svg";
@@ -47,6 +47,9 @@ function CandidatesPage() {
     </div>
   </div>
 </div>
+<section className="flex flex-col items-center text-center mb-0">
+    <Link to="/apply" className="bg-blue-200 text-3xl font-bold mb-0 p-3">Candidates</Link>
+</section>
     </Layout>
   );
 }
