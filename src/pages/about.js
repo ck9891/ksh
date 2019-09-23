@@ -19,7 +19,7 @@ function AboutPage() {
           About KSH Staffing Solutions
         </h2>
         <div className="md:w-2/3 md:mr-8">
-          <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
+          <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify first-letter">
 
 We provide staffing services to our clients based on their specific needs and requirements. By sourcing talented staff and the increase in networking and various media, we are able to keep up to the demands of Companies. These companies are expanding their temporary, temporary to permanent and contact placements as their business cycles.
           </p>
@@ -28,7 +28,7 @@ We provide staffing services to our clients based on their specific needs and re
       </section>
       <section className="flex flex-col md:flex-row items-center  md:my-8">
         <div className="md:w-2/3">
-          <p className="border-r-4 border-gray-900 font-serif leading-loose pr-4 text-justify">
+          <p className="border-r-4 border-gray-900 font-serif leading-loose pr-4 text-justify first-letter">
 
             KSH understands the expectations of Leading Edge Companies and Canada’s Top 50 Companies to work for. They have made the commitment to use our services and expertise. We reward that commitment with reliability, dependability and consistent performance through the years.
           </p>
@@ -41,7 +41,7 @@ We provide staffing services to our clients based on their specific needs and re
       <section className="flex flex-col md:flex-row items-center">
 
         <div className=" md:mr-8">
-          <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
+          <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify first-letter">
 We are customer driven, and understand their demands and the importance of deadlines and the time constraints in their day to day operations.
 Our customers choose KSH Staffing because we understand their business, we are professional and an experienced source for staffing for their company needs.
           </p>
