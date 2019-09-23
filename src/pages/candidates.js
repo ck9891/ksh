@@ -48,7 +48,7 @@ function CandidatesPage() {
   </div>
 </div>
 <section className="flex flex-col items-center text-center mb-0">
-    <Link to="/apply" className="bg-blue-200 text-3xl font-bold mb-0 p-3">Candidates</Link>
+    <Link to="/apply" className="bg-blue-200 text-3xl font-bold mb-0 p-3">Apply</Link>
 </section>
     </Layout>
   );
