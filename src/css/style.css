@@ -63,7 +63,7 @@
 
 .timeline p {
     border-top: 3px dashed;
-    border-color: blue !important;
+    border-color: #4299e1 !important;
     margin: 0;
     padding: 30px;
     counter-increment: section;
@@ -79,7 +79,7 @@
     padding: 10px;
     height: 40px;
     width: 40px;
-    background-color: blue;
+    background-color: #4299e1;
     text-align: center;
     color: white;
     font-size: 110%;
@@ -94,7 +94,7 @@
     padding: 10px;
     height: 40px;
     width: 40px;
-    background-color: blue;
+    background-color: #4299e1;
     text-align: center;
     color: white;
     font-size: 110%;

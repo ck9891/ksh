@@ -23,7 +23,7 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-gray-100">
+      <footer className="bg-gray-300">
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
           <p className="text-black">
             Created by{" "}
