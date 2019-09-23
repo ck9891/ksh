@@ -55,6 +55,13 @@ function Header({ siteTitle }) {
               About
             </Link>
 
+             <Link
+              to="/apply"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Apply
+            </Link>
+
             <Link
               to="/candidates"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
