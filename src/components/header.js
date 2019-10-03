@@ -61,6 +61,12 @@ function Header({ siteTitle }) {
             >
               Apply
             </Link>
+            <Link
+              to="/opportunities"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Job Opportunities
+            </Link>
 
             <Link
               to="/candidates"
