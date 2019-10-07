@@ -1,8 +1,6 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
 
 function AboutPage() {
   return (
@@ -20,7 +18,6 @@ function AboutPage() {
         </h2>
         <div className="md:w-2/3 md:mr-8">
           <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify first-letter">
-
 We provide staffing services to our clients based on their specific needs and requirements. By sourcing talented staff and the increase in networking and various media, we are able to keep up to the demands of Companies. These companies are expanding their temporary, temporary to permanent and contact placements as their business cycles.
           </p>
 
