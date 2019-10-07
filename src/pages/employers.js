@@ -1,8 +1,7 @@
 import React from "react";
-
+import { Link } from 'gatsby';
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
 
 function EmployersPage() {
   return (
@@ -15,38 +14,29 @@ function EmployersPage() {
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">Employers</h1>
       </section>
       <section className="flex flex-col md:flex-row items-center">
-        <h2 className="bg-blue-400 text-2xl font-bold inline-block my-8 p-3">
-          About KSH Staffing Solutions
-        </h2>
-        <div className="md:w-2/3 md:mr-8">
           <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify first-letter">
-
-            We provide staffing services to our clients based on their specific needs and requirements. By sourcing talented staff and the increase in networking and various media, we are able to keep up to the demands of Companies. These companies are expanding their temporary, temporary to permanent and contact placements as their business cycles.
+Our friendly staff take the time to understand your company, it’s culture, environment. We work towards building a long-term partnership and establishing what it is you would like to cultivate with your new or existing team.
           </p>
 
-        </div>
       </section>
       <section className="flex flex-col md:flex-row items-center  md:my-8">
-        <div className="md:w-2/3">
           <p className="border-r-4 border-gray-900 font-serif leading-loose pr-4 text-justify first-letter">
-
-            KSH understands the expectations of Leading Edge Companies and Canada’s Top 50 Companies to work for. They have made the commitment to use our services and expertise. We reward that commitment with reliability, dependability and consistent performance through the years.
+            With lots of experience in the industry an a good reputation with customers and candidates we endeavor to provide you with top quality personnel, service, for competitive rates; along with Our Commitment of Excellence.
           </p>
-
-        </div>
-        <h2 className="bg-blue-400 text-2xl font-bold inline-block my-8 p-3 mr-8">
-          Why KSH Staffing Solutions?
-        </h2>
       </section>
       <section className="flex flex-col md:flex-row items-center">
-
-        <div className=" md:mr-8">
           <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify first-letter">
-            We are customer driven, and understand their demands and the importance of deadlines and the time constraints in their day to day operations.
-            Our customers choose KSH Staffing because we understand their business, we are professional and an experienced source for staffing for their company needs.
+            We will only place candidates that “fit” your requirements with experience, skills, training, and the personality for the position you are seeking.
+          </p>
+      </section>
+      <section className="flex flex-col md:flex-row items-center  md:my-8">
+          <p className="border-r-4 border-gray-900 font-serif leading-loose pr-4 text-justify first-letter">
+            Working with you to achieve standards for Workplace Safety and benefiting from our expertise, training, and commitment.
           </p>
 
-        </div>
+      </section>
+      <section className="flex flex-col md:flex-row items-center  md:my-8">
+        <Link to="/contact" className="bg-blue-200 text-2xl font-bold mb-0 p-3">Contact Us</Link>
       </section>
     </Layout>
   );
