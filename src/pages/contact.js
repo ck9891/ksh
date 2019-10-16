@@ -59,7 +59,7 @@ function ContactPage() {
             rows="8"
           />
 
-          <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white">
+          <button className="flex bg-blue-200 text-2xl font-bold mb-0 p-3 px-5 mx-auto">
             Submit
           </button>
         </form>

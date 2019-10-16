@@ -35,7 +35,7 @@ Our friendly staff take the time to understand your company, it’s culture, env
           </p>
 
       </section>
-      <section className="flex flex-col md:flex-row items-center  md:my-8">
+      <section className="flex flex-col md:flex-row items-center self-center md:my-8">
         <Link to="/contact" className="bg-blue-200 text-2xl font-bold mb-0 p-3">Contact Us</Link>
       </section>
     </Layout>
