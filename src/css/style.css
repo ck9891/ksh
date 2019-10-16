@@ -388,9 +388,31 @@ body {
     .right {
         left: 0%;
     }
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .job-card {
     width: 22rem;
     padding: 1rem;
 }
+
+input {
+    border: 1px solid #eee;
+    padding: 7.5px 7.5px;
+    margin: 0 .5rem;
+    font-size: 1.1em;
+}
+label {
+    margin: 1rem;
+    font-size: 1.1em;
+    align-self: center;
+        justify-content: space-between;
+}
+
+#applyForm {
+    background-color: #bee3f8;
+}
+
