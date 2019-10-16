@@ -7,7 +7,7 @@ function Header({ siteTitle }) {
 
   return (
     <nav className="bg-blue-500">
-      <div className="flex flex-wrap items-center justify-between max-w-7xl mx-auto p-4 md:p-8">
+      <div className="flex flex-wrap items-center justify-between max-w-6xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
           <svg
             className="fill-current h-8 mr-2 w-8"
@@ -43,48 +43,48 @@ function Header({ siteTitle }) {
           <div className="text-sm">
             <Link
               to="/"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               About
             </Link>
 
              <Link
               to="/apply"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Apply
             </Link>
             <Link
               to="/opportunities"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Job Opportunities
             </Link>
 
             <Link
               to="/candidates"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Candidates
             </Link>
 
             <Link
               to="/employers"
-              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Employers
             </Link>
 
             <Link
               to="/contact"
-              className="text-lg block md:inline-block mt-4 md:mt-0 no-underline text-white"
+              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
               Contact
             </Link>
