@@ -43,48 +43,48 @@ function Header({ siteTitle }) {
           <div className="text-sm">
             <Link
               to="/"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               About
             </Link>
 
              <Link
               to="/apply"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Apply
             </Link>
             <Link
               to="/opportunities"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Job Opportunities
             </Link>
 
             <Link
               to="/candidates"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Candidates
             </Link>
 
             <Link
               to="/employers"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Employers
             </Link>
 
             <Link
               to="/contact"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
+              className="text-lg block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
               Contact
             </Link>
