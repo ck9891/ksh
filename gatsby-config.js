@@ -29,14 +29,9 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
+
     `gatsby-plugin-sharp`,
+    { resolve: `gatsby-source-filesystem`, options: { path: `./src/images/` } },
     `gatsby-transformer-sharp`,
   ],
 

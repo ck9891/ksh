@@ -1,18 +1,27 @@
 import React from "react";
+import Img from 'gatsby-image';
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-function IndexPage() {
+function IndexPage({data}) {
   return (
+
     <Layout>
       <SEO
         title="Home"
         keywords={[`Staffing`, `Employment`, `Permanent`, `Temporary`]}
       />
-
-      <section className="text-center">
+      <div>
+      <Img
+        className="headshot"
+        fluid={data.file.childImageSharp.fluid}
+        alt=""
+      />
+      </div>
+      <section className="text-center max-w-5xl mx-auto">
         <img
           src={catAndHumanIllustration}
           className="block mx-auto w-1/2"
@@ -30,5 +39,17 @@ function IndexPage() {
     </Layout>
   );
 }
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "banner2.jpg" }) {
+      childImageSharp {
+        fluid(maxHeight:200, quality: 99
+  ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage;
