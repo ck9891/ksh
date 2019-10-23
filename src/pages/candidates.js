@@ -12,9 +12,9 @@ function CandidatesPage() {
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
       <section className="flex flex-col items-center text-center mb-0">
-        <h1 className="bg-blue-200 text-3xl font-bold mb-0 p-3 ">Candidates</h1>
+        <h2 className="bg-blue-200 text-3xl font-bold mb-0 p-3 ">Our Candidates</h2>
       </section>
-     
+
 <div className="timeline">
   <div className="container left">
     <div className="content">
@@ -25,7 +25,7 @@ function CandidatesPage() {
   <div className="container right">
     <div className="content">
       <h3 className="font-bold mb-4 text-2xl">Interviews</h3>
-      <p>KSH Staffing will prepare applicants for interviews with potential employers.</p>    
+      <p>KSH Staffing will prepare applicants for interviews with potential employers.</p>
   </div>
   </div>
   <div className="container left">
