@@ -416,3 +416,13 @@ label {
     background-color: #bee3f8;
 }
 
+.hero-banner >* {
+  opacity: .7;
+}
+
+.hero-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
