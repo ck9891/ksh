@@ -9,6 +9,7 @@ function AboutPage() {
         title="About"
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
+      <section className="max-w-5xl mx-auto">
       <section className="flex flex-col items-center text-center mb-6">
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">About</h1>
       </section>
@@ -44,6 +45,7 @@ Our customers choose KSH Staffing because we understand their business, we are p
           </p>
 
         </div>
+      </section>
       </section>
     </Layout>
   );

@@ -1,9 +1,10 @@
 {
   "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.131",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "description": "KSH Staffing website.",
+  "version": "1.2",
+  "author": "cameron Farquharson",
   "dependencies": {
+    "@leveluptuts/fresh": "0.0.25",
     "gatsby": "2.15.15",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-manifest": "2.2.16",

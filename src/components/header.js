@@ -69,20 +69,6 @@ function Header({ siteTitle }) {
             </Link>
 
             <Link
-              to="/candidates"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-            >
-              Candidates
-            </Link>
-
-            <Link
-              to="/employers"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-            >
-              Employers
-            </Link>
-
-            <Link
               to="/contact"
               className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
