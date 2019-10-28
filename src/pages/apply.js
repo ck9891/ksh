@@ -12,11 +12,11 @@ function ApplyPage() {
         title="Apply"
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
-      <section className="max-w-5xl self-center">
+      <section className="max-w-3xl self-center w-full self-center">
       <section className="flex flex-col items-center text-center mb-6">
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">Apply</h1>
       </section>
-      <section className="flex flex-col items-center content">
+      <section className="flex flex-row items-center content">
         {/* <form action="netlify" method="post">
           <fieldset>
             <label htmlFor="first_name" className="flex items-center m-2">
@@ -52,16 +52,22 @@ function ApplyPage() {
           >
             <Field>First Name</Field>
             <Field>Last Name</Field>
-            <Field>Address Line 1</Field>
-            <Field>Address Line 2</Field>
+            <Field className="w-100">Address Line 1</Field>
+            <Field className="w-100">Address Line 2</Field>
             <Field>City</Field>
             <Field>Province</Field>
             <Field>Postal Code</Field>
             <Field>Phone Number</Field>
             <Field type="email">Email</Field>
+            <Field>Position Applied For</Field>
+            <p class="w-100">Date Available to start:</p>
             <Field>MM</Field>
             <Field>DD</Field>
-            <Field>YYY</Field>
+            <Field>YYYY</Field>
+
+            <Field type="select" options={['Day', 'Evening', 'Night']}>Shift Preference</Field>
+            <Field type="select" options={['Yes', 'No']}>Have you worked with us before?</Field>
+            <Field type="select" options={['Yes', 'No']}>Are you authorized to work in Canada?</Field>
             {/* <Field type="select" options={options} /> */}
           </Form>
       </section>

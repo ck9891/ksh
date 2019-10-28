@@ -242,3 +242,34 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.fresh-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fresh-input {
+  background-color: white !important;
+    border-radius: 6px !important;
+    width: 100%;
+    font-size: 1.15em !important;
+}
+
+.addressLine1, .addressLine2, .positionAppliedFor {
+  width: 100%;
+}
+.mM, .dD, .yYYY {
+  width:100px;
+}
+.fresh-form p {
+  width:100%;
+}
+
+.city, .province, .postalCode {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width:33%;
+}
+
+
