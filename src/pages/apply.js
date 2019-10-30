@@ -1,8 +1,6 @@
-// import React, {useState} from "react";
-// import { Form, Field } from '@leveluptuts/fresh'
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-// import dogIllustration from "../images/dog-illustration.svg";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Formik, Form, useField } from "formik";
@@ -242,12 +240,12 @@ function ApplyPage() {
                 </MySelect>
                 <MySelect label="Have you worked with us before?" name="history">
                   <option value="">Select Yes or No</option>
-                  <option value="yes">No</option>
+                  <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </MySelect>
                 <MySelect label="Are you authorized to work in Canada?" name="authorization">
                   <option value="">Select Yes or No</option>
-                  <option value="yes">No</option>
+                  <option value="yes">Yes</option>
                   <option value="no">No</option>
                 </MySelect>
                 <div className="w-full my-6">
