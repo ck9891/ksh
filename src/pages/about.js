@@ -1,16 +1,25 @@
 import React from "react";
+import Img from 'gatsby-image';
+import { graphql } from "gatsby"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-function AboutPage() {
+function AboutPage({data}) {
   return (
     <Layout>
       <SEO
         title="About"
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
-      <section className="max-w-5xl mx-auto">
-      <section className="flex flex-col items-center text-center mb-6">
+      <banner>
+        <Img
+          // className="hero-banner"
+          fluid={data.file.childImageSharp.fluid}
+          alt=""
+        />
+      </banner>
+      <section className="max-w-5xl mx-auto my-8">
+      <section className="flex flex-col items-center text-center">
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">About</h1>
       </section>
       <section className="flex flex-col md:flex-row items-center">
@@ -50,5 +59,18 @@ Our customers choose KSH Staffing because we understand their business, we are p
     </Layout>
   );
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "banner3.jpg" }) {
+      childImageSharp {
+        fluid(duotone: { highlight: "#bee3f8", shadow: "#00001f" },maxHeight:150, maxWidth:900, quality: 99
+  ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default AboutPage;
