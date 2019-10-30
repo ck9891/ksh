@@ -14,7 +14,7 @@ function IndexPage({data}) {
         title="Home"
         keywords={[`Staffing`, `Employment`, `Permanent`, `Temporary`]}
       />
-      <div className="bg-gray-800 relative">
+      <div className="bg-gray-900 relative">
       <Img
         className="hero-banner"
         fluid={data.file.childImageSharp.fluid}
