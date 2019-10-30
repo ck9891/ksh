@@ -1,16 +1,17 @@
 import React from "react";
-
+import Img from 'gatsby-image';
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-function ContactPage() {
+function ContactPage({data}) {
   return (
     <Layout>
       <SEO
         title="Contact"
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
-      <section>
+      <section className="mb-8">
         <section className="flex flex-col items-center text-center mb-6">
           <h1 className="bg-blue-200 text-3xl font-bold my-8 p-3 ">Contact Us</h1>
         </section>
@@ -64,8 +65,31 @@ function ContactPage() {
           </button>
         </form>
       </section>
+      <div className="bg-gray-800 relative">
+        <Img
+          // className="hero-banner"
+          fluid={data.file.childImageSharp.fluid}
+          alt=""
+        />
+        <div className="hero-banner-content text-center">
+          <Link to="/apply" className="bg-blue-200 text-2xl font-bold mb-0 p-3">Apply Now</Link>
+        </div>
+      </div>
     </Layout>
   );
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "banner3.jpg" }) {
+      childImageSharp {
+        fluid(duotone: { highlight: "#bee3f8", shadow: "#00001f" },maxHeight:150, maxWidth:900, quality: 99
+  ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default ContactPage;

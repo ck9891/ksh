@@ -1,8 +1,9 @@
 import React from "react";
 import Img from 'gatsby-image';
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import FooterBanner from '../components/FooterBanner'
 
 function AboutPage({data}) {
   return (
@@ -11,13 +12,7 @@ function AboutPage({data}) {
         title="About"
         keywords={[`Staffing`, `Employment`, `react`, `tailwindcss`]}
       />
-      <banner>
-        <Img
-          // className="hero-banner"
-          fluid={data.file.childImageSharp.fluid}
-          alt=""
-        />
-      </banner>
+
       <section className="max-w-5xl mx-auto my-8">
       <section className="flex flex-col items-center text-center">
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">About</h1>
@@ -56,6 +51,17 @@ Our customers choose KSH Staffing because we understand their business, we are p
         </div>
       </section>
       </section>
+
+      <div className="bg-gray-800 relative">
+          <Img
+            // className="hero-banner"
+            fluid={data.file.childImageSharp.fluid}
+            alt=""
+          />
+        <div className="hero-banner-content text-center">
+          <Link to="/apply" className="bg-blue-200 text-2xl font-bold mb-0 p-3">Apply Now</Link>
+        </div>
+      </div>
     </Layout>
   );
 }
