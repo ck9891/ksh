@@ -33,6 +33,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     { resolve: `gatsby-source-filesystem`, options: { path: `./src/images/` } },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 
 };

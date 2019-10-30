@@ -1,11 +1,18 @@
 import React from "react";
 import Img from 'gatsby-image';
 import { graphql, Link } from "gatsby"
+import {useSpring, animated} from 'react-spring';
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import FooterBanner from '../components/FooterBanner'
 
 function AboutPage({data}) {
+  const [props] = useSpring({
+    top: 100,
+    background: 'black',
+    from: { top: 0 },
+    delay: '2000'
+  })
   return (
     <Layout>
       <SEO
@@ -14,9 +21,11 @@ function AboutPage({data}) {
       />
 
       <section className="max-w-5xl mx-auto my-8">
-      <section className="flex flex-col items-center text-center">
+      <animated.div className="flex flex-col items-center text-center"
+
+          style={props}>
         <h1 className="bg-blue-200 text-3xl font-bold mb-6 p-3 ">About</h1>
-      </section>
+      </animated.div>
       <section className="flex flex-col md:flex-row items-center">
         <h2 className="bg-blue-400 text-2xl font-bold inline-block my-8 p-3">
           About KSH Staffing Solutions
