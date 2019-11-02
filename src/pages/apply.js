@@ -1,7 +1,8 @@
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import React from "react";
+import React, {useState} from "react";
+import axios from 'axios';
 import ReactDOM from "react-dom";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
@@ -118,8 +119,43 @@ const MySelect = ({ label, ...props }) => {
 };
 
 
-function ApplyPage() {
 
+  
+function ApplyPage() {
+const [serverState, setServerState] = useState({
+  submitting: false,
+  status: null
+});
+const handleServerResponse = (ok, msg, form) => {
+  setServerState({
+    submitting: false,
+    status: {
+      ok,
+      msg
+    }
+  });
+  if (ok) {
+    form.reset();
+  }
+};
+const handleOnSubmit = e => {
+  e.preventDefault();
+  const form = e.target;
+  setServerState({
+    submitting: true
+  });
+  axios({
+      method: "post",
+      url: "https://formspree.io/cam@cameronfarquharson.ca",
+      data: new FormData(form)
+    })
+    .then(r => {
+      handleServerResponse(true, "Thanks!", form);
+    })
+    .catch(r => {
+      handleServerResponse(false, r.response.data.error, form);
+    });
+};
   return (
     <Layout>
       <SEO
@@ -162,15 +198,15 @@ function ApplyPage() {
                   )
                   .required("Required")
               })}
-              onSubmit={(values, { setSubmitting }) => {
-                setTimeout(() => {
-                  alert(JSON.stringify(values, null, 2));
-                  setSubmitting(false);
-                }, 400);
-              }}
+              // onSubmit={(values, { setSubmitting }) => {
+              //   setTimeout(() => {
+              //     alert(JSON.stringify(values, null, 2));
+              //     setSubmitting(false);
+              //   }, 400);
+              // }}
+              onSubmit={handleOnSubmit}
             >
-              < Form className = "flex flex-row justify-around flex-wrap"
-              action = "https://formspree.io/you@example.com" >
+              <Form className = "flex flex-row justify-around flex-wrap">
                 <MyTextInput
                   label="First Name"
                   name="firstName"
