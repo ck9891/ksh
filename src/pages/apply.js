@@ -144,10 +144,12 @@ const handleOnSubmit = e => {
   setServerState({
     submitting: true
   });
+  const data = new FormData(form)
+  console.log(data)
   axios({
       method: "post",
       url: "https://formspree.io/cam@cameronfarquharson.ca",
-      data: new FormData(form)
+      data
     })
     .then(r => {
       handleServerResponse(true, "Thanks!", form);
