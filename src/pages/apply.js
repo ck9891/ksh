@@ -169,7 +169,8 @@ function ApplyPage() {
                 }, 400);
               }}
             >
-              <Form className="flex flex-row justify-around flex-wrap">
+              < Form className = "flex flex-row justify-around flex-wrap"
+              action = "https://formspree.io/you@example.com" >
                 <MyTextInput
                   label="First Name"
                   name="firstName"
