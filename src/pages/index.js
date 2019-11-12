@@ -22,7 +22,7 @@ function IndexPage({data}) {
       />
         <div className="hero-banner-content text-center">
           <h2 className="bg-blue-400 text-2xl font-bold inline-block my-8 p-3">
-            Welcome to KSH Staffing Solutions Inc. This is a test
+            Welcome to KSH Staffing Solutions Inc.
           </h2>
         </div>
       </div>
