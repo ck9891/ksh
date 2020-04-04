@@ -206,9 +206,24 @@ const handleOnSubmit = e => {
               //     setSubmitting(false);
               //   }, 400);
               // }}
-              onSubmit={handleOnSubmit}
+//               onSubmit={handleOnSubmit}
+              onSubmit={(values, actions) => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact-demo", ...values })
+        })
+        .then(() => {
+          alert('Success');
+          actions.resetForm()
+        })
+        .catch(() => {
+          alert('Error');
+        })
+        .finally(() => actions.setSubmitting(false))
+      }
             >
-              <Form className = "flex flex-row justify-around flex-wrap">
+              <Form className = "flex flex-row justify-around flex-wrap" data-netlify={true}>
                 <MyTextInput
                   label="First Name"
                   name="firstName"
