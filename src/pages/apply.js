@@ -221,7 +221,7 @@ const handleOnSubmit = e => {
           alert('Error');
         })
         .finally(() => actions.setSubmitting(false))
-      }
+      }}
             >
               <Form className = "flex flex-row justify-around flex-wrap" data-netlify={true}>
                 <MyTextInput
